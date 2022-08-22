@@ -16,7 +16,7 @@
 }
 
 /*Загальне для всьго*/
-.page {
+.body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
 }
@@ -31,13 +31,7 @@
 }
 
 /*Header*/
-.header .link:hover,
-.header .link:focus,
-.header .link.active {
-  color: var(--accent-txt-cl);
-}
-
-.header .logo-begin {
+.header-logo-begin {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -45,7 +39,7 @@
   letter-spacing: 0.03em;
   color: var(--accent-txt-cl);
 }
-.header .logo-end {
+.header-logo-end {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -53,16 +47,23 @@
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
 }
-.main.nav {
-  font-family: var(--main-font);
+.nav-link {
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
 }
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: var(--accent-txt-cl);
+}
 .list-items {
-  font-family: var(--main-font);
+  list-style: none;
+}
+.link-hd {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -70,13 +71,17 @@
   color: var(--light-txt-cl);
   list-style: none;
 }
+.link-hd:hover,
+.link-hd:focus,
+.link-hd.active {
+  color: var(--accent-txt-cl);
+}
 
 /*Main Studio*/
-.section-a {
+.section-hero {
   background-color: var(--accent-bg-cl);
 }
-.section-a .title {
-  font-family: var(--main-font);
+.title-hero {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -85,7 +90,8 @@
   text-transform: uppercase;
   color: #ffffff;
 }
-.btn {
+.btn-hero {
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -95,19 +101,17 @@
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 4px 30px;
-  background-color: #f5f4fa;
-  color: var(--main-txt-cl);
+  background-color: var(--accent-txt-cl);
+  color: #ffffff;
   cursor: pointer;
 }
-.btn:hover,
-.btn:focus,
-.btn.active {
-  color: #ffffff;
-  background-color: var(--accent-txt-cl);
+.btn-hero:hover,
+.btn-hero:focus,
+.btn-hero.active {
+  background-color: #188ce8;
 }
 
-.section-b .title {
-  font-family: var(--main-font);
+.features title {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -115,16 +119,14 @@
   text-transform: uppercase;
   color: var(--main-txt-cl);
 }
-.section-b .text {
-  font-family: var(--main-font);
+.features text {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--light-txt-cl);
 }
-.section-c .title,
-.section-d .title {
-  font-family: var(--main-font);
+.title-our-work,
+.title-our-team {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -133,8 +135,7 @@
   color: var(--main-txt-cl);
 }
 /*Наша команда Ім'я*/
-.subject {
-  font-family: var(--main-font);
+.title-subject {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -143,36 +144,55 @@
   color: var(--main-txt-cl);
 }
 /*Наша команда Посада*/
-.subtitle {
-  font-family: var(--main-font);
+.text-subtitle {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--light-txt-cl);
 }
+
 /*Portfolio*/
 .title-portfolio {
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--main-txt-cl);
 }
-.subtitle-portfolio {
-  font-family: var(--main-font);
+.text-portfolio {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--light-txt-cl);
+}
+.portfolio-btn {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 4px 30px;
+  background-color: var(--accent-txt-cl);
+  color: var(--main-txt-cl);
+  cursor: pointer;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus,
+.portfolio-btn.active {
+  color: #ffffff;
+  background-color: #188ce8;
 }
 
 /*Footer*/
 .footer {
   background-color: var(--accent-bg-cl);
 }
-.footer .logo-begin {
+.footer-logo-begin {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -180,7 +200,7 @@
   letter-spacing: 0.03em;
   color: var(--accent-txt-cl);
 }
-.footer .logo-end {
+.footer-logo-end {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -188,23 +208,23 @@
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.address .search {
-  font-family: var(--main-font);
+.search-ft {
+  font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.address .link {
-  font-family: var(--main-font);
+.link-ft {
+  font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.address .link:hover,
-.address .link:focus,
-.address .link.active {
+.link-ft:hover,
+.link-ft:focus,
+.link-ft.active {
   color: var(--accent-txt-cl);
 }
 
