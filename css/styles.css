@@ -14,7 +14,8 @@
   --white-txt-cl: #ffffff;
 
   /*others*/
-  --btn-hover-cl: #188ce8; 
+  --btn-hover-cl: #188ce8;
+  --btn-cl: #f5f4fa;
 }
 
 /*Загальне для всьго*/
@@ -47,7 +48,7 @@
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: var(--main-txt-cl);
+  color: #000000;
 }
 .nav-link {
   font-style: normal;
@@ -55,6 +56,7 @@
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--main-txt-cl);
 }
 .nav-link:hover,
@@ -72,6 +74,7 @@
   letter-spacing: 0.02em;
   color: var(--light-txt-cl);
   list-style: none;
+  text-decoration: none;
 }
 .link-hd:hover,
 .link-hd:focus,
@@ -113,15 +116,15 @@
   background-color: var(--btn-hover-cl);
 }
 
-.features title {
+.features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-txt-cl);
 }
-.features text {
+.features-text {
+  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -134,7 +137,6 @@
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-txt-cl);
 }
 /*Наша команда Ім'я*/
 .title-subject {
@@ -143,7 +145,6 @@
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-txt-cl);
 }
 /*Наша команда Посада*/
 .text-subtitle {
@@ -160,7 +161,6 @@
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: var(--main-txt-cl);
 }
 .text-portfolio {
   font-size: 16px;
@@ -179,7 +179,7 @@
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 4px 30px;
-  background-color: var(--accent-txt-cl);
+  background-color: var(--btn-cl);
   color: var(--main-txt-cl);
   cursor: pointer;
 }
@@ -216,6 +216,7 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--white-txt-cl);
+  text-decoration: none;
 }
 .link-ft {
   font-style: normal;
@@ -223,6 +224,7 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 .link-ft:hover,
 .link-ft:focus,
